@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FilmServiceService } from '../film-service.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { FilmServiceService } from '../film-service.service';
   styleUrls: ['./filmcard.component.scss']
 })
 export class FilmcardComponent {
+  @Input() test: any
   genres_list : string[] = [
     "—",
     "драма",

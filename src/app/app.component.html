@@ -5,9 +5,9 @@
   <!-- <div class="test-films" *ngFor="let film of films">
     {{film.name}}
   </div> -->
-  <div class="wrap-center">
-    <div class="films">
-      <app-filmcard *ngFor="let film of films"></app-filmcard>
+  <div class="films">
+    <div class="films-film" *ngFor="let film of films">
+      <app-filmcard [test]=test></app-filmcard>
     </div>
   </div>
     
