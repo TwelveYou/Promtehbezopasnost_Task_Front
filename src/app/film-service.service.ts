@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as jsonData from '../assets/data.json';
-import { Subject } from 'rxjs';
+// import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 export class FilmServiceService {
 
   films : any;
-  best_film : number | null = null;
+  best_film : any = null;
 
   public getOneFilm(id:number){
     return this.films[id];
@@ -19,7 +19,16 @@ export class FilmServiceService {
   }
 
   public makeFilmBest(id : number){    
-    this.best_film = id;
+    let list_films : any = this.getFilms();
+    for (let film in list_films) {         
+      // Тут задается лучший фильм
+      if(list_films[film].id == id){
+        this.best_film = list_films[film];
+        console.log(this.best_film); // --------------------------------
+        return this.best_film
+      }
+    }
+    return null
   }
 
   public deleteBestFilm(){    

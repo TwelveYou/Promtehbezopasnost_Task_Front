@@ -11,8 +11,7 @@
   <h2>
     Самый лучший фильм
   </h2>
-  <div class="best-film" *ngIf="best_film">
-    <app-filmcard [film]=best_film></app-filmcard>
-  </div>
-    
+  <ng-container class="best-film" *ngIf="best_film">
+    <app-filmcard [film]=this.best_film></app-filmcard>
+  </ng-container>    
 </div>

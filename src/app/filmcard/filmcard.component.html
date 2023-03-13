@@ -4,6 +4,14 @@
         <h4 class="film-card__film-name mb10"> {{film.name}} </h4>
         <p class="film-card__film-genres mb10">{{getGenreNames(film.genre)}}</p>
         <p class="film-card__film-year mb10">{{film.year}}</p>
-        <div class="film-card__film-like_button" > </div>
+        <div class="film-card__film-like_button" (click)="choseBestFilm(film.id)"> </div>
+
+        <!-- <div *ngIf="film; else notFilm">
+            <div class="film-card__film-like_button" (click)="choseBestFilm(film.id)"> </div>
+        </div>
+        <div #notFilm class="film-card__film-like_button-active" (click)="choseBestFilm(film.id)">
+            <div class="film-card__film-like_button-active" (click)="choseBestFilm(film.id)"> </div>
+        </div> -->
+
     </div>
 </div>
