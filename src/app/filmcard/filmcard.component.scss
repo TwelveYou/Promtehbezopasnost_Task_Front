@@ -1,0 +1,38 @@
+*{
+    margin:0;
+}
+.film-card{
+    height: 400px;
+    width: 190px;
+    border: 1px black solid;
+    border-radius: 10px;    
+    color: #1D1838;
+}
+
+.film-card__film{
+    margin: 15px 20px;
+}
+
+.film-card__film-poster{
+    height: 225px;
+    width: 150px;  
+    border-radius: 10px;
+}
+
+.film-card__film-name{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.film-card__film-genres, .film-card__film-year{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.film-card__film-like_button{
+    visibility: hidden;
+}

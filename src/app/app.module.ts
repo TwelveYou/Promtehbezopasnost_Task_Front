@@ -17,4 +17,8 @@ import { FilmcardComponent } from './filmcard/filmcard.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){ 
+
+  }
+}
