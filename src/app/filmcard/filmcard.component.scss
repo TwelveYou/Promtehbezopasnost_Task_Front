@@ -39,16 +39,22 @@
 .film-card__film-like_button{
     height: 48px;
     width: 48px;
-    background: rgba(0, 0, 0, 0.1);
     border-radius: 24px;
-    background-image: url(../../assets/like.svg);
     background-repeat: no-repeat;
     background-position: center;
-
-    // float: right;   
     position: absolute; 
     bottom: 15px;
 	right: 20px;
 
-    // mask-image: url("");
+    // background-image: url(../../assets/heart.svg);
+    background-image: url(../../assets/heart-nofill.svg);
+
+    // background: rgba(0, 0, 0, 0.1);
+}
+
+.film-card__film-like_button:hover{
+    background: rgba(0, 0, 0, 0.1);
+    background-image: url(../../assets/heart-nofill.svg);
+    background-repeat: no-repeat;
+    background-position: center;    
 }

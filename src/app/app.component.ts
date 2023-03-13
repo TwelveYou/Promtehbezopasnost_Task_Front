@@ -10,7 +10,7 @@ import { FilmServiceService } from './film-service.service';
 export class AppComponent {
   title = 'app';
   films : any[] = [];
-  tests: string[] = ['Иван', 'Евгений'];
+  best_film : any = null;
 
   constructor (svc: FilmServiceService){
     let list_films : any = svc.getFilms();
@@ -18,6 +18,11 @@ export class AppComponent {
     for (let film in list_films) {   
       if(list_films[film].name != null)   
       this.films.push(list_films[film]);
+      
+      // Тут задается лучччший фильм пока
+      if(list_films[film].id == 2){
+        this.best_film = list_films[film];
+      }
     }
   }
 }

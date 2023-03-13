@@ -2,13 +2,17 @@
   <h2>
     Популярные фильмы
   </h2>
-  <!-- <div class="test-films" *ngFor="let film of films">
-    {{film.name}}
-  </div> -->
+  <app-filter></app-filter>
   <div class="films">
     <div class="films-film" *ngFor="let film of films">
       <app-filmcard [film]=film></app-filmcard>
     </div>
+  </div>
+  <h2>
+    Самый лучший фильм
+  </h2>
+  <div class="best-film" *ngIf="best_film">
+    <app-filmcard [film]=best_film></app-filmcard>
   </div>
     
 </div>

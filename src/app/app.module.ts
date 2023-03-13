@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FilmcardComponent } from './filmcard/filmcard.component';
 
 import { FilmServiceService } from './film-service.service';
+import { FilterComponent } from './filter/filter.component';
 // import * as jsonData from '../assets/data.json';
 
 // import data from 'src/assets/data.json';
@@ -14,7 +15,8 @@ import { FilmServiceService } from './film-service.service';
 @NgModule({
   declarations: [
     AppComponent,
-    FilmcardComponent
+    FilmcardComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

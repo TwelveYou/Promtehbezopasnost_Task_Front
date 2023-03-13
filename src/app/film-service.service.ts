@@ -18,24 +18,13 @@ export class FilmServiceService {
     return this.films;
   }
 
-  // public getGenreNames(ids_genre:any[]): string{
-  //   let genres_list : string[] = [
-  //     "—",
-  //     "драма",
-  //     "биография",
-  //     "история",
-  //     "фэнтези",
-  //     "приключения",
-  //     "боевик",
-  //     "мультфильм",
-  //     "комедия",
-  //     "триллер",
-  //     "детектив",
-  //     "фантастика"
-  //   ];
+  public makeFilmBest(id : number){    
+    this.best_film = id;
+  }
 
-  //   return ids_genre.map((id : any) => genres_list[id]).join(', ');
-  // }
+  public deleteBestFilm(){    
+    this.best_film = null;
+  }
 
   constructor() { 
     this.films = jsonData;
