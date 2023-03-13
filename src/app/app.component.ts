@@ -13,10 +13,11 @@ export class AppComponent {
   tests: string[] = ['Иван', 'Евгений'];
 
   constructor (svc: FilmServiceService){
-    console.log(svc.getFilms());
-    for (let film in svc.getFilms()) {   
-      if(svc.getFilms()[film].name != null)   
-      this.films.push(svc.getFilms()[film]);
+    let list_films : any = svc.getFilms();
+    console.log(list_films);
+    for (let film in list_films) {   
+      if(list_films[film].name != null)   
+      this.films.push(list_films[film]);
     }
   }
 }
