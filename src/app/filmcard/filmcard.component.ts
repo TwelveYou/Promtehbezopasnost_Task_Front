@@ -7,7 +7,8 @@ import { FilmServiceService } from '../film-service.service';
   styleUrls: ['./filmcard.component.scss']
 })
 export class FilmcardComponent {
-  @Input() test: any
+  @Input() film: any
+  
   genres_list : string[] = [
     "—",
     "драма",
@@ -23,7 +24,7 @@ export class FilmcardComponent {
     "фантастика"
   ];
 
-  film : any;
+  // film : any;
 
   img_link : string = '';
   name : string = '';

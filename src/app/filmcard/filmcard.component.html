@@ -1,10 +1,9 @@
 <div class="film-card">
     <div class="film-card__film">
-        <img class="film-card__film-poster mb10" src={{img_link}}  alt="постер фильма">    
-        <h4 class="film-card__film-name mb10"> {{name}} </h4>
-        <p class="film-card__film-genres mb10">{{genres}}</p>
-        <p class="film-card__film-year mb10">{{year}}</p>
-        <p>{{test}}</p>
+        <img class="film-card__film-poster mb10" src='../../assets/images/{{film.id}}.jpeg'  alt="постер фильма">    
+        <h4 class="film-card__film-name mb10"> {{film.name}} </h4>
+        <p class="film-card__film-genres mb10">{{film.genre}}</p>
+        <p class="film-card__film-year mb10">{{film.year}}</p>
         <div class="film-card__film-like_button"></div>
     </div>
 </div>

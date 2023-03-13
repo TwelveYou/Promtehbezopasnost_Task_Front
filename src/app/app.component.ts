@@ -9,7 +9,6 @@ import { FilmServiceService } from './film-service.service';
 })
 export class AppComponent {
   title = 'app';
-  test = 'Привет'
   films : any[] = [];
   tests: string[] = ['Иван', 'Евгений'];
 
