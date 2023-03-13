@@ -4,13 +4,16 @@
 .film-card{
     height: 400px;
     width: 190px;
-    border: 1px black solid;
+    // border: 1px black solid;
     border-radius: 10px;    
+    background-color: white;
     color: #1D1838;
+
+    position: relative;    
 }
 
 .film-card__film{
-    margin: 15px 20px;
+    padding: 15px 20px;
 }
 
 .film-card__film-poster{
@@ -34,5 +37,18 @@
 }
 
 .film-card__film-like_button{
-    visibility: hidden;
+    height: 48px;
+    width: 48px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    background-image: url(../../assets/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // float: right;   
+    position: absolute; 
+    bottom: 15px;
+	right: 20px;
+
+    // mask-image: url("");
 }
