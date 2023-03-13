@@ -26,17 +26,17 @@ export class FilmcardComponent {
 
   // film : any;
 
-  img_link : string = '';
-  name : string = '';
-  year : string = '';
-  genres : string = '';
+  // img_link : string = '';
+  // name : string = '';
+  // year : string = '';
+  // genres : string = '';
   
 
-  constructor (svc: FilmServiceService){
-    this.film = svc.getOneFilm(0);
-    this.name = this.film['name'];
-    this.year = String(this.film['year']);
-    this.img_link = '../../assets/images/' + String(this.film['id']) + '.jpeg';
-    this.genres = this.film['genre'].map((id_genre : any) => this.genres_list[id_genre]).join(', ');
-  }
+  // constructor (svc: FilmServiceService){
+  //   this.film = svc.getOneFilm(0);
+  //   this.name = this.film['name'];
+  //   this.year = String(this.film['year']);
+  //   this.img_link = '../../assets/images/' + String(this.film['id']) + '.jpeg';
+  //   this.genres = this.film['genre'].map((id_genre : any) => this.genres_list[id_genre]).join(', ');
+  // }
 }

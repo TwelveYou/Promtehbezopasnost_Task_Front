@@ -14,7 +14,8 @@ export class AppComponent {
 
   constructor (svc: FilmServiceService){
     console.log(svc.getFilms());
-    for (let film in svc.getFilms()) {      
+    for (let film in svc.getFilms()) {   
+      if(svc.getFilms()[film].name != null)   
       this.films.push(svc.getFilms()[film]);
     }
   }
